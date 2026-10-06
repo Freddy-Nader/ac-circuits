@@ -4149,32 +4149,32 @@
       <a name="facing" val="south"/>
       <a name="size" val="30"/>
     </comp>
-    <comp lib="9" loc="(243,244)" name="Text">
-      <a name="color" val="#ff0000"/>
-      <a name="font" val="SansSerif plain 12"/>
-      <a name="text" val="&#120576;"/>
-    </comp>
-    <comp lib="9" loc="(244,123)" name="Text">
+    <comp lib="9" loc="(240,120)" name="Text">
       <a name="color" val="#ff0000"/>
       <a name="font" val="SansSerif plain 12"/>
       <a name="text" val="&#120572;"/>
     </comp>
-    <comp lib="9" loc="(244,153)" name="Text">
+    <comp lib="9" loc="(240,150)" name="Text">
       <a name="color" val="#ff0000"/>
       <a name="font" val="SansSerif plain 12"/>
       <a name="text" val="&#120573;"/>
     </comp>
-    <comp lib="9" loc="(244,183)" name="Text">
+    <comp lib="9" loc="(240,180)" name="Text">
       <a name="color" val="#ff0000"/>
       <a name="font" val="SansSerif plain 12"/>
       <a name="text" val="&#120574;"/>
     </comp>
-    <comp lib="9" loc="(244,213)" name="Text">
+    <comp lib="9" loc="(240,210)" name="Text">
       <a name="color" val="#ff0000"/>
       <a name="font" val="SansSerif plain 12"/>
       <a name="text" val="&#120575;"/>
     </comp>
-    <comp lib="9" loc="(340,388)" name="Text">
+    <comp lib="9" loc="(240,240)" name="Text">
+      <a name="color" val="#ff0000"/>
+      <a name="font" val="SansSerif plain 12"/>
+      <a name="text" val="&#120576;"/>
+    </comp>
+    <comp lib="9" loc="(340,385)" name="Text">
       <a name="color" val="#ff0000"/>
       <a name="font" val="SansSerif plain 12"/>
       <a name="text" val="g"/>
@@ -4184,27 +4184,27 @@
       <a name="font" val="SansSerif plain 12"/>
       <a name="text" val="f"/>
     </comp>
-    <comp lib="9" loc="(529,388)" name="Text">
+    <comp lib="9" loc="(525,385)" name="Text">
       <a name="color" val="#ff0000"/>
       <a name="font" val="SansSerif plain 12"/>
       <a name="text" val="e"/>
     </comp>
-    <comp lib="9" loc="(650,388)" name="Text">
+    <comp lib="9" loc="(650,385)" name="Text">
       <a name="color" val="#ff0000"/>
       <a name="font" val="SansSerif plain 12"/>
       <a name="text" val="d"/>
     </comp>
-    <comp lib="9" loc="(770,388)" name="Text">
+    <comp lib="9" loc="(770,385)" name="Text">
       <a name="color" val="#ff0000"/>
       <a name="font" val="SansSerif plain 12"/>
       <a name="text" val="c"/>
     </comp>
-    <comp lib="9" loc="(870,388)" name="Text">
+    <comp lib="9" loc="(870,385)" name="Text">
       <a name="color" val="#ff0000"/>
       <a name="font" val="SansSerif plain 12"/>
       <a name="text" val="b"/>
     </comp>
-    <comp lib="9" loc="(980,388)" name="Text">
+    <comp lib="9" loc="(980,385)" name="Text">
       <a name="color" val="#ff0000"/>
       <a name="font" val="SansSerif plain 12"/>
       <a name="text" val="a"/>
@@ -4440,8 +4440,8 @@
     <comp lib="0" loc="(220,190)" name="Pin">
       <a name="appearance" val="NewPins"/>
       <a name="facing" val="south"/>
-      <a name="label" val="b"/>
-      <a name="labelfont" val="SansSerif plain 16"/>
+      <a name="label" val="n"/>
+      <a name="labelfont" val="SansSerif plain 12"/>
       <a name="radix" val="10unsigned"/>
       <a name="width" val="4"/>
     </comp>
