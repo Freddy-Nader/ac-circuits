@@ -13,7 +13,10 @@ Each folder is one practice with its own README.
 | Practice | What it is |
 |---|---|
 | [`maya`](maya) | DC from binary to Maya numerals on a 4×7 LED matrix. |
+| [`sum`](sum) | Ripple-carry adders of 1 to 8 bits and a 2-bit adder from Karnaugh maps. |
+| [`decoder`](decoder) | Decoders with enable, from 1 to 2 up to 4 to 16 lines. |
 | [`seven-segments`](seven-segments) | Base-10 and base-16 decoders for a seven-segment display. |
+| [`mult`](mult) | Unsigned and signed 2×2 multipliers with a mode selector, and a 4×4 array multiplier. |
 
 ## Getting Started
 Install [Logisim-evolution](https://github.com/logisim-evolution/logisim-evolution/releases) 4.1.0 or later, then
