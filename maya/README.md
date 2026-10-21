@@ -1,6 +1,6 @@
 <div align="center">
 
-  # DC from binary to Maya numerals in [Logisim Evolution](https://github.com/logisim-evolution/logisim-evolution)
+  # DC from binary to Maya numerals
   
   [How It Works](#how-it-works) • [Files](#files) • [Getting Started](#getting-started) • [License](#license)
   
@@ -12,7 +12,7 @@
 </div>
 
 
-A circuit that takes a 5-bit number $n$ and draws it as a Maya numeral (0 to 19) on a 4×7 LED matrix, built and simulated in Logisim-evolution.
+A circuit that takes a 5-bit number $n$ and draws it as a Maya numeral (0 to 19) on a 4×7 LED matrix.
 
 ## How It Works
 

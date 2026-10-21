@@ -1,11 +1,11 @@
 <div align="center">
 
-  # Seven-segment decoders in [Logisim Evolution](https://github.com/logisim-evolution/logisim-evolution)
+  # Seven-segment decoders
 
   <img src="example.png" width="512" alt="The sixteen inputs 0 to F, each with Logisim's reference hex display on top, the base-10 decoder on the left (cyan) and the base-16 decoder on the right (pink)">
 </div>
 
-Two decoders (DC) that take a 4-bit number $n = x_3x_2x_1x_0$ and light the segments `a` to `g` of a seven-segment display, one for base 10 (digits 0 to 9) and one for base 16 (0 to 9 and A, b, C, d, E, F), built and simulated in Logisim-evolution.
+Two decoders (DC) that take a 4-bit number $n = x_3x_2x_1x_0$ and light the segments `a` to `g` of a seven-segment display, one for base 10 (digits 0 to 9) and one for base 16 (0 to 9 and A, b, C, d, E, F).
 
 ## How It Works
 
@@ -18,7 +18,7 @@ Segments are active high, as in a common-cathode display. Each segment is drawn 
 
 ## Files
 
-### `seven-segments.circ`
+### [`seven-segments.circ`](seven-segments.circ)
 
 The final circuits. Open this one to see the project working.
 
@@ -30,9 +30,9 @@ The final circuits. Open this one to see the project working.
 | `HEX` | Base-16 decoder, input `n`, outputs `a`–`g`. Shared subexpressions α, β, γ, δ and ε. |
 | `LEDS` | Wiring-order test, not used by `main`. Several displays wired with different segment orders (`afgbced`, `dcbafge`, …) to find the order in which the wires reach their segments without crossing, which is `a`, `f`, `g`, `b`, `c`, `e`, `d`. |
 
-### `tests.circ`
+### [`tests.circ`](tests.circ)
 
-An earlier version of the project, kept to show how the design changed. The final circuits are in `seven-segments.circ`.
+An earlier version of the project, kept to show how the design changed. The final circuits are in [`seven-segments.circ`](seven-segments.circ).
 
 | Circuit | What it is |
 |---|---|
