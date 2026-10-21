@@ -4717,6 +4717,12 @@
     <comp lib="6" loc="(150,520)" name="LED"/>
     <comp lib="6" loc="(150,540)" name="LED"/>
     <comp lib="6" loc="(150,560)" name="LED"/>
+    <comp lib="6" loc="(150,680)" name="LED"/>
+    <comp lib="6" loc="(150,700)" name="LED"/>
+    <comp lib="6" loc="(150,720)" name="LED"/>
+    <comp lib="6" loc="(150,760)" name="LED"/>
+    <comp lib="6" loc="(150,780)" name="LED"/>
+    <comp lib="6" loc="(150,800)" name="LED"/>
     <comp lib="6" loc="(1510,410)" name="LED">
       <a name="facing" val="north"/>
     </comp>
@@ -4753,6 +4759,15 @@
     <comp lib="6" loc="(170,570)" name="LED">
       <a name="facing" val="north"/>
     </comp>
+    <comp lib="6" loc="(170,650)" name="LED">
+      <a name="facing" val="north"/>
+    </comp>
+    <comp lib="6" loc="(170,730)" name="LED">
+      <a name="facing" val="north"/>
+    </comp>
+    <comp lib="6" loc="(170,830)" name="LED">
+      <a name="facing" val="south"/>
+    </comp>
     <comp lib="6" loc="(190,410)" name="LED">
       <a name="facing" val="north"/>
     </comp>
@@ -4761,6 +4776,15 @@
     </comp>
     <comp lib="6" loc="(190,570)" name="LED">
       <a name="facing" val="north"/>
+    </comp>
+    <comp lib="6" loc="(190,650)" name="LED">
+      <a name="facing" val="north"/>
+    </comp>
+    <comp lib="6" loc="(190,730)" name="LED">
+      <a name="facing" val="north"/>
+    </comp>
+    <comp lib="6" loc="(190,830)" name="LED">
+      <a name="facing" val="south"/>
     </comp>
     <comp lib="6" loc="(210,410)" name="LED">
       <a name="facing" val="north"/>
@@ -4771,12 +4795,15 @@
     <comp lib="6" loc="(210,570)" name="LED">
       <a name="facing" val="north"/>
     </comp>
-    <comp lib="6" loc="(210,710)" name="LED"/>
-    <comp lib="6" loc="(210,730)" name="LED"/>
-    <comp lib="6" loc="(210,750)" name="LED"/>
-    <comp lib="6" loc="(210,790)" name="LED"/>
-    <comp lib="6" loc="(210,810)" name="LED"/>
-    <comp lib="6" loc="(210,830)" name="LED"/>
+    <comp lib="6" loc="(210,650)" name="LED">
+      <a name="facing" val="north"/>
+    </comp>
+    <comp lib="6" loc="(210,730)" name="LED">
+      <a name="facing" val="north"/>
+    </comp>
+    <comp lib="6" loc="(210,830)" name="LED">
+      <a name="facing" val="south"/>
+    </comp>
     <comp lib="6" loc="(230,440)" name="LED">
       <a name="facing" val="east"/>
     </comp>
@@ -4796,48 +4823,21 @@
       <a name="facing" val="east"/>
     </comp>
     <comp lib="6" loc="(230,680)" name="LED">
-      <a name="facing" val="north"/>
+      <a name="facing" val="east"/>
+    </comp>
+    <comp lib="6" loc="(230,700)" name="LED">
+      <a name="facing" val="east"/>
+    </comp>
+    <comp lib="6" loc="(230,720)" name="LED">
+      <a name="facing" val="east"/>
     </comp>
     <comp lib="6" loc="(230,760)" name="LED">
-      <a name="facing" val="north"/>
-    </comp>
-    <comp lib="6" loc="(230,860)" name="LED">
-      <a name="facing" val="south"/>
-    </comp>
-    <comp lib="6" loc="(250,680)" name="LED">
-      <a name="facing" val="north"/>
-    </comp>
-    <comp lib="6" loc="(250,760)" name="LED">
-      <a name="facing" val="north"/>
-    </comp>
-    <comp lib="6" loc="(250,860)" name="LED">
-      <a name="facing" val="south"/>
-    </comp>
-    <comp lib="6" loc="(270,680)" name="LED">
-      <a name="facing" val="north"/>
-    </comp>
-    <comp lib="6" loc="(270,760)" name="LED">
-      <a name="facing" val="north"/>
-    </comp>
-    <comp lib="6" loc="(270,860)" name="LED">
-      <a name="facing" val="south"/>
-    </comp>
-    <comp lib="6" loc="(290,710)" name="LED">
       <a name="facing" val="east"/>
     </comp>
-    <comp lib="6" loc="(290,730)" name="LED">
+    <comp lib="6" loc="(230,780)" name="LED">
       <a name="facing" val="east"/>
     </comp>
-    <comp lib="6" loc="(290,750)" name="LED">
-      <a name="facing" val="east"/>
-    </comp>
-    <comp lib="6" loc="(290,790)" name="LED">
-      <a name="facing" val="east"/>
-    </comp>
-    <comp lib="6" loc="(290,810)" name="LED">
-      <a name="facing" val="east"/>
-    </comp>
-    <comp lib="6" loc="(290,830)" name="LED">
+    <comp lib="6" loc="(230,800)" name="LED">
       <a name="facing" val="east"/>
     </comp>
     <comp lib="6" loc="(310,440)" name="LED"/>
@@ -5163,6 +5163,10 @@
     <wire from="(150,500)" to="(150,520)"/>
     <wire from="(150,520)" to="(150,540)"/>
     <wire from="(150,540)" to="(150,560)"/>
+    <wire from="(150,680)" to="(150,700)"/>
+    <wire from="(150,700)" to="(150,720)"/>
+    <wire from="(150,760)" to="(150,780)"/>
+    <wire from="(150,780)" to="(150,800)"/>
     <wire from="(1530,440)" to="(1530,460)"/>
     <wire from="(1530,460)" to="(1530,480)"/>
     <wire from="(1530,480)" to="(1530,500)"/>
@@ -5197,6 +5201,9 @@
     <wire from="(170,410)" to="(190,410)"/>
     <wire from="(170,490)" to="(190,490)"/>
     <wire from="(170,570)" to="(190,570)"/>
+    <wire from="(170,650)" to="(190,650)"/>
+    <wire from="(170,730)" to="(190,730)"/>
+    <wire from="(170,830)" to="(190,830)"/>
     <wire from="(1740,430)" to="(1740,470)"/>
     <wire from="(1740,430)" to="(1760,430)"/>
     <wire from="(1740,530)" to="(1740,570)"/>
@@ -5216,6 +5223,9 @@
     <wire from="(190,410)" to="(210,410)"/>
     <wire from="(190,490)" to="(210,490)"/>
     <wire from="(190,570)" to="(210,570)"/>
+    <wire from="(190,650)" to="(210,650)"/>
+    <wire from="(190,730)" to="(210,730)"/>
+    <wire from="(190,830)" to="(210,830)"/>
     <wire from="(200,140)" to="(200,400)"/>
     <wire from="(200,140)" to="(360,140)"/>
     <wire from="(200,400)" to="(230,400)"/>
@@ -5223,10 +5233,6 @@
     <wire from="(210,160)" to="(370,160)"/>
     <wire from="(210,390)" to="(240,390)"/>
     <wire from="(210,570)" to="(240,570)"/>
-    <wire from="(210,710)" to="(210,730)"/>
-    <wire from="(210,730)" to="(210,750)"/>
-    <wire from="(210,790)" to="(210,810)"/>
-    <wire from="(210,810)" to="(210,830)"/>
     <wire from="(220,180)" to="(220,380)"/>
     <wire from="(220,180)" to="(380,180)"/>
     <wire from="(220,380)" to="(250,380)"/>
@@ -5237,23 +5243,17 @@
     <wire from="(230,490)" to="(240,490)"/>
     <wire from="(230,520)" to="(230,540)"/>
     <wire from="(230,540)" to="(230,560)"/>
-    <wire from="(230,680)" to="(250,680)"/>
-    <wire from="(230,760)" to="(250,760)"/>
-    <wire from="(230,860)" to="(250,860)"/>
+    <wire from="(230,680)" to="(230,700)"/>
+    <wire from="(230,700)" to="(230,720)"/>
+    <wire from="(230,760)" to="(230,780)"/>
+    <wire from="(230,780)" to="(230,800)"/>
     <wire from="(240,390)" to="(240,490)"/>
     <wire from="(240,500)" to="(240,570)"/>
     <wire from="(240,500)" to="(250,500)"/>
     <wire from="(250,380)" to="(250,500)"/>
-    <wire from="(250,680)" to="(270,680)"/>
-    <wire from="(250,760)" to="(270,760)"/>
-    <wire from="(250,860)" to="(270,860)"/>
     <wire from="(290,380)" to="(290,500)"/>
     <wire from="(290,380)" to="(320,380)"/>
     <wire from="(290,500)" to="(310,500)"/>
-    <wire from="(290,710)" to="(290,730)"/>
-    <wire from="(290,730)" to="(290,750)"/>
-    <wire from="(290,790)" to="(290,810)"/>
-    <wire from="(290,810)" to="(290,830)"/>
     <wire from="(300,390)" to="(300,490)"/>
     <wire from="(300,390)" to="(330,390)"/>
     <wire from="(300,490)" to="(330,490)"/>
