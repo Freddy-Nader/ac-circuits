@@ -1,0 +1,896 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project source="4.1.0" version="1.0">
+  This file is intended to be loaded by Logisim-evolution v4.1.0(https://github.com/logisim-evolution/).
+
+  <lib desc="#Wiring" name="0">
+    <tool name="Splitter">
+      <a name="facing" val="south"/>
+    </tool>
+    <tool name="Pin">
+      <a name="appearance" val="classic"/>
+    </tool>
+    <tool name="Constant">
+      <a name="facing" val="west"/>
+    </tool>
+  </lib>
+  <lib desc="#Gates" name="1"/>
+  <lib desc="#Plexers" name="2"/>
+  <lib desc="#Arithmetic" name="3"/>
+  <lib desc="#FPArithmetic" name="4"/>
+  <lib desc="#Memory" name="5"/>
+  <lib desc="#I/O" name="6"/>
+  <lib desc="#TTL" name="7"/>
+  <lib desc="#TCL" name="8"/>
+  <lib desc="#Base" name="9"/>
+  <lib desc="#BFH-Praktika" name="10"/>
+  <lib desc="#Input/Output-Extra" name="11"/>
+  <lib desc="#Soc" name="12"/>
+  <main name="main"/>
+  <options>
+    <a name="gateUndefined" val="ignore"/>
+    <a name="simlimit" val="1000"/>
+    <a name="simrand" val="0"/>
+  </options>
+  <mappings>
+    <tool lib="9" map="Button2" name="Poke Tool"/>
+    <tool lib="9" map="Button3" name="Menu Tool"/>
+    <tool lib="9" map="Ctrl Button1" name="Menu Tool"/>
+  </mappings>
+  <toolbar>
+    <tool lib="9" name="Poke Tool"/>
+    <tool lib="9" name="Edit Tool"/>
+    <tool lib="9" name="Wiring Tool"/>
+    <tool lib="9" name="Text Tool"/>
+    <sep/>
+    <tool lib="0" name="Pin"/>
+    <tool lib="0" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="type" val="output"/>
+    </tool>
+    <sep/>
+    <tool lib="1" name="NOT Gate"/>
+    <tool lib="1" name="AND Gate"/>
+    <tool lib="1" name="OR Gate"/>
+    <tool lib="1" name="XOR Gate"/>
+    <tool lib="1" name="NAND Gate"/>
+    <tool lib="1" name="NOR Gate"/>
+    <sep/>
+    <tool lib="5" name="D Flip-Flop"/>
+    <tool lib="5" name="Register"/>
+  </toolbar>
+  <circuit name="main">
+    <a name="appearance" val="logisim_evolution"/>
+    <a name="circuit" val="main"/>
+    <a name="circuitnamedboxfixedsize" val="true"/>
+    <a name="simulationFrequency" val="1.0"/>
+  </circuit>
+  <circuit name="HA_1bit">
+    <a name="circuit" val="HA_1bit"/>
+    <a name="circuitnamedboxfixedsize" val="true"/>
+    <a name="simulationFrequency" val="1.0"/>
+    <comp lib="0" loc="(100,120)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="b"/>
+      <a name="labelfont" val="SansSerif plain 12"/>
+    </comp>
+    <comp lib="0" loc="(100,90)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="a"/>
+      <a name="labelfont" val="SansSerif plain 12"/>
+    </comp>
+    <comp lib="0" loc="(240,120)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="s"/>
+      <a name="labelfont" val="SansSerif plain 12"/>
+      <a name="type" val="output"/>
+    </comp>
+    <comp lib="0" loc="(240,180)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="Cout"/>
+      <a name="labelfont" val="SansSerif plain 12"/>
+      <a name="type" val="output"/>
+    </comp>
+    <comp lib="1" loc="(180,100)" name="AND Gate">
+      <a name="negate0" val="true"/>
+      <a name="size" val="30"/>
+    </comp>
+    <comp lib="1" loc="(180,140)" name="AND Gate">
+      <a name="negate1" val="true"/>
+      <a name="size" val="30"/>
+    </comp>
+    <comp lib="1" loc="(180,180)" name="AND Gate">
+      <a name="size" val="30"/>
+    </comp>
+    <comp lib="1" loc="(230,120)" name="OR Gate">
+      <a name="size" val="30"/>
+    </comp>
+    <comp lib="9" loc="(40,40)" name="Text">
+      <a name="font" val="Times New Roman italic 12"/>
+      <a name="halign" val="left"/>
+      <a name="text" val="Semisumador de 1 bit"/>
+    </comp>
+    <wire from="(100,120)" to="(110,120)"/>
+    <wire from="(100,90)" to="(120,90)"/>
+    <wire from="(110,120)" to="(110,190)"/>
+    <wire from="(110,120)" to="(130,120)"/>
+    <wire from="(110,190)" to="(150,190)"/>
+    <wire from="(120,170)" to="(150,170)"/>
+    <wire from="(120,90)" to="(120,170)"/>
+    <wire from="(120,90)" to="(140,90)"/>
+    <wire from="(130,110)" to="(130,120)"/>
+    <wire from="(130,110)" to="(150,110)"/>
+    <wire from="(130,120)" to="(130,150)"/>
+    <wire from="(130,150)" to="(140,150)"/>
+    <wire from="(140,130)" to="(150,130)"/>
+    <wire from="(140,150)" to="(150,150)"/>
+    <wire from="(140,90)" to="(140,130)"/>
+    <wire from="(140,90)" to="(150,90)"/>
+    <wire from="(180,100)" to="(190,100)"/>
+    <wire from="(180,140)" to="(190,140)"/>
+    <wire from="(180,180)" to="(240,180)"/>
+    <wire from="(190,100)" to="(190,110)"/>
+    <wire from="(190,110)" to="(200,110)"/>
+    <wire from="(190,130)" to="(190,140)"/>
+    <wire from="(190,130)" to="(200,130)"/>
+    <wire from="(230,120)" to="(240,120)"/>
+  </circuit>
+  <circuit name="FA_1bit">
+    <a name="circuit" val="FA_1bit"/>
+    <a name="circuitnamedboxfixedsize" val="true"/>
+    <a name="simulationFrequency" val="1.0"/>
+    <comp lib="0" loc="(100,120)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="a"/>
+      <a name="labelfont" val="SansSerif plain 12"/>
+    </comp>
+    <comp lib="0" loc="(100,150)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="b"/>
+      <a name="labelfont" val="SansSerif plain 12"/>
+    </comp>
+    <comp lib="0" loc="(100,90)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="Cin"/>
+      <a name="labelfont" val="SansSerif plain 12"/>
+    </comp>
+    <comp lib="0" loc="(240,120)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="Cout"/>
+      <a name="labelfont" val="SansSerif plain 12"/>
+      <a name="type" val="output"/>
+    </comp>
+    <comp lib="0" loc="(240,90)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="s"/>
+      <a name="labelfont" val="SansSerif plain 12"/>
+      <a name="type" val="output"/>
+    </comp>
+    <comp lib="1" loc="(230,120)" name="OR Gate">
+      <a name="size" val="30"/>
+    </comp>
+    <comp lib="9" loc="(40,40)" name="Text">
+      <a name="font" val="Times New Roman italic 12"/>
+      <a name="halign" val="left"/>
+      <a name="text" val="Sumador completo de 1 bit"/>
+    </comp>
+    <comp loc="(140,120)" name="HA_1bit">
+      <a name="label" val="HA_1"/>
+      <a name="labelfont" val="American Typewriter plain 8"/>
+    </comp>
+    <comp loc="(190,90)" name="HA_1bit">
+      <a name="label" val="HA_2"/>
+      <a name="labelfont" val="American Typewriter plain 8"/>
+      <a name="labelloc" val="south"/>
+    </comp>
+    <wire from="(100,120)" to="(110,120)"/>
+    <wire from="(100,130)" to="(100,150)"/>
+    <wire from="(100,130)" to="(110,130)"/>
+    <wire from="(100,90)" to="(160,90)"/>
+    <wire from="(140,120)" to="(150,120)"/>
+    <wire from="(140,130)" to="(200,130)"/>
+    <wire from="(150,100)" to="(150,120)"/>
+    <wire from="(150,100)" to="(160,100)"/>
+    <wire from="(190,100)" to="(200,100)"/>
+    <wire from="(190,90)" to="(240,90)"/>
+    <wire from="(200,100)" to="(200,110)"/>
+    <wire from="(230,120)" to="(240,120)"/>
+  </circuit>
+  <circuit name="FA_2bit">
+    <a name="circuit" val="FA_2bit"/>
+    <a name="circuitnamedboxfixedsize" val="true"/>
+    <a name="simulationFrequency" val="1.0"/>
+    <comp lib="0" loc="(100,90)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="Cin"/>
+      <a name="labelfont" val="SansSerif plain 12"/>
+    </comp>
+    <comp lib="0" loc="(110,120)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="a"/>
+      <a name="labelfont" val="SansSerif plain 12"/>
+      <a name="width" val="2"/>
+    </comp>
+    <comp lib="0" loc="(110,120)" name="Splitter"/>
+    <comp lib="0" loc="(110,150)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="b"/>
+      <a name="labelfont" val="SansSerif plain 12"/>
+      <a name="width" val="2"/>
+    </comp>
+    <comp lib="0" loc="(110,150)" name="Splitter"/>
+    <comp lib="0" loc="(260,120)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="Cout"/>
+      <a name="labelfont" val="SansSerif plain 12"/>
+      <a name="type" val="output"/>
+    </comp>
+    <comp lib="0" loc="(260,80)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="s"/>
+      <a name="labelfont" val="SansSerif plain 12"/>
+      <a name="type" val="output"/>
+      <a name="width" val="2"/>
+    </comp>
+    <comp lib="0" loc="(260,80)" name="Splitter">
+      <a name="facing" val="west"/>
+      <a name="spacing" val="2"/>
+    </comp>
+    <comp lib="9" loc="(40,40)" name="Text">
+      <a name="font" val="Times New Roman italic 12"/>
+      <a name="halign" val="left"/>
+      <a name="text" val="Sumador completo de 2 bits"/>
+    </comp>
+    <comp loc="(190,90)" name="FA_1bit">
+      <a name="label" val="FA_1bit_1"/>
+      <a name="labelfont" val="American Typewriter plain 8"/>
+    </comp>
+    <comp loc="(240,110)" name="FA_1bit">
+      <a name="label" val="FA_1bit_2"/>
+      <a name="labelfont" val="American Typewriter plain 8"/>
+      <a name="labelloc" val="south"/>
+    </comp>
+    <wire from="(100,90)" to="(160,90)"/>
+    <wire from="(130,100)" to="(160,100)"/>
+    <wire from="(130,110)" to="(130,120)"/>
+    <wire from="(130,120)" to="(210,120)"/>
+    <wire from="(130,130)" to="(140,130)"/>
+    <wire from="(130,140)" to="(150,140)"/>
+    <wire from="(140,110)" to="(140,130)"/>
+    <wire from="(140,110)" to="(160,110)"/>
+    <wire from="(150,130)" to="(150,140)"/>
+    <wire from="(150,130)" to="(210,130)"/>
+    <wire from="(190,100)" to="(200,100)"/>
+    <wire from="(190,90)" to="(240,90)"/>
+    <wire from="(200,100)" to="(200,110)"/>
+    <wire from="(200,110)" to="(210,110)"/>
+    <wire from="(240,120)" to="(260,120)"/>
+  </circuit>
+  <circuit name="FA_4bit">
+    <a name="circuit" val="FA_4bit"/>
+    <a name="circuitnamedboxfixedsize" val="true"/>
+    <a name="simulationFrequency" val="1.0"/>
+    <comp lib="0" loc="(100,90)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="Cin"/>
+      <a name="labelfont" val="SansSerif plain 12"/>
+    </comp>
+    <comp lib="0" loc="(130,120)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="a"/>
+      <a name="labelfont" val="SansSerif plain 12"/>
+      <a name="width" val="4"/>
+    </comp>
+    <comp lib="0" loc="(130,120)" name="Splitter">
+      <a name="bit1" val="0"/>
+      <a name="bit2" val="1"/>
+      <a name="bit3" val="1"/>
+      <a name="incoming" val="4"/>
+    </comp>
+    <comp lib="0" loc="(130,150)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="b"/>
+      <a name="labelfont" val="SansSerif plain 12"/>
+      <a name="width" val="4"/>
+    </comp>
+    <comp lib="0" loc="(130,150)" name="Splitter">
+      <a name="bit1" val="0"/>
+      <a name="bit2" val="1"/>
+      <a name="bit3" val="1"/>
+      <a name="incoming" val="4"/>
+    </comp>
+    <comp lib="0" loc="(280,120)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="Cout"/>
+      <a name="labelfont" val="SansSerif plain 12"/>
+      <a name="type" val="output"/>
+    </comp>
+    <comp lib="0" loc="(280,80)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="s"/>
+      <a name="labelfont" val="SansSerif plain 12"/>
+      <a name="type" val="output"/>
+      <a name="width" val="4"/>
+    </comp>
+    <comp lib="0" loc="(280,80)" name="Splitter">
+      <a name="bit1" val="0"/>
+      <a name="bit2" val="1"/>
+      <a name="bit3" val="1"/>
+      <a name="facing" val="west"/>
+      <a name="incoming" val="4"/>
+      <a name="spacing" val="2"/>
+    </comp>
+    <comp lib="9" loc="(40,40)" name="Text">
+      <a name="font" val="Times New Roman italic 12"/>
+      <a name="halign" val="left"/>
+      <a name="text" val="Sumador completo de 4 bits"/>
+    </comp>
+    <comp loc="(210,90)" name="FA_2bit">
+      <a name="label" val="FA_2bit_1"/>
+      <a name="labelfont" val="American Typewriter plain 8"/>
+    </comp>
+    <comp loc="(260,110)" name="FA_2bit">
+      <a name="label" val="FA_2bit_2"/>
+      <a name="labelfont" val="American Typewriter plain 8"/>
+      <a name="labelloc" val="south"/>
+    </comp>
+    <wire from="(100,90)" to="(180,90)"/>
+    <wire from="(150,100)" to="(180,100)"/>
+    <wire from="(150,110)" to="(150,120)"/>
+    <wire from="(150,120)" to="(230,120)"/>
+    <wire from="(150,130)" to="(160,130)"/>
+    <wire from="(150,140)" to="(170,140)"/>
+    <wire from="(160,110)" to="(160,130)"/>
+    <wire from="(160,110)" to="(180,110)"/>
+    <wire from="(170,130)" to="(170,140)"/>
+    <wire from="(170,130)" to="(230,130)"/>
+    <wire from="(210,100)" to="(220,100)"/>
+    <wire from="(210,90)" to="(260,90)"/>
+    <wire from="(220,100)" to="(220,110)"/>
+    <wire from="(220,110)" to="(230,110)"/>
+    <wire from="(260,120)" to="(280,120)"/>
+  </circuit>
+  <circuit name="FA_8bit">
+    <a name="circuit" val="FA_8bit"/>
+    <a name="circuitnamedboxfixedsize" val="true"/>
+    <a name="simulationFrequency" val="1.0"/>
+    <comp lib="0" loc="(100,90)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="Cin"/>
+      <a name="labelfont" val="SansSerif plain 12"/>
+    </comp>
+    <comp lib="0" loc="(170,120)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="a"/>
+      <a name="labelfont" val="SansSerif plain 12"/>
+      <a name="width" val="8"/>
+    </comp>
+    <comp lib="0" loc="(170,120)" name="Splitter">
+      <a name="bit1" val="0"/>
+      <a name="bit2" val="0"/>
+      <a name="bit3" val="0"/>
+      <a name="bit4" val="1"/>
+      <a name="bit5" val="1"/>
+      <a name="bit6" val="1"/>
+      <a name="bit7" val="1"/>
+      <a name="incoming" val="8"/>
+    </comp>
+    <comp lib="0" loc="(170,150)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="b"/>
+      <a name="labelfont" val="SansSerif plain 12"/>
+      <a name="width" val="8"/>
+    </comp>
+    <comp lib="0" loc="(170,150)" name="Splitter">
+      <a name="bit1" val="0"/>
+      <a name="bit2" val="0"/>
+      <a name="bit3" val="0"/>
+      <a name="bit4" val="1"/>
+      <a name="bit5" val="1"/>
+      <a name="bit6" val="1"/>
+      <a name="bit7" val="1"/>
+      <a name="incoming" val="8"/>
+    </comp>
+    <comp lib="0" loc="(320,120)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="Cout"/>
+      <a name="labelfont" val="SansSerif plain 12"/>
+      <a name="type" val="output"/>
+    </comp>
+    <comp lib="0" loc="(320,80)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="s"/>
+      <a name="labelfont" val="SansSerif plain 12"/>
+      <a name="type" val="output"/>
+      <a name="width" val="8"/>
+    </comp>
+    <comp lib="0" loc="(320,80)" name="Splitter">
+      <a name="bit1" val="0"/>
+      <a name="bit2" val="0"/>
+      <a name="bit3" val="0"/>
+      <a name="bit4" val="1"/>
+      <a name="bit5" val="1"/>
+      <a name="bit6" val="1"/>
+      <a name="bit7" val="1"/>
+      <a name="facing" val="west"/>
+      <a name="incoming" val="8"/>
+      <a name="spacing" val="2"/>
+    </comp>
+    <comp lib="9" loc="(40,40)" name="Text">
+      <a name="font" val="Times New Roman italic 12"/>
+      <a name="halign" val="left"/>
+      <a name="text" val="Sumador completo de 8 bits"/>
+    </comp>
+    <comp loc="(250,90)" name="FA_4bit">
+      <a name="label" val="FA_4bit_1"/>
+      <a name="labelfont" val="American Typewriter plain 8"/>
+    </comp>
+    <comp loc="(300,110)" name="FA_4bit">
+      <a name="label" val="FA_4bit_2"/>
+      <a name="labelfont" val="American Typewriter plain 8"/>
+      <a name="labelloc" val="south"/>
+    </comp>
+    <wire from="(100,90)" to="(220,90)"/>
+    <wire from="(190,100)" to="(220,100)"/>
+    <wire from="(190,110)" to="(190,120)"/>
+    <wire from="(190,120)" to="(270,120)"/>
+    <wire from="(190,130)" to="(200,130)"/>
+    <wire from="(190,140)" to="(210,140)"/>
+    <wire from="(200,110)" to="(200,130)"/>
+    <wire from="(200,110)" to="(220,110)"/>
+    <wire from="(210,130)" to="(210,140)"/>
+    <wire from="(210,130)" to="(270,130)"/>
+    <wire from="(250,100)" to="(260,100)"/>
+    <wire from="(250,90)" to="(300,90)"/>
+    <wire from="(260,100)" to="(260,110)"/>
+    <wire from="(260,110)" to="(270,110)"/>
+    <wire from="(300,120)" to="(320,120)"/>
+  </circuit>
+  <circuit name="pruebas">
+    <a name="appearance" val="logisim_evolution"/>
+    <a name="circuit" val="pruebas"/>
+    <a name="circuitnamedboxfixedsize" val="true"/>
+    <a name="simulationFrequency" val="1.0"/>
+    <comp lib="0" loc="(100,90)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="Cin"/>
+      <a name="labelfont" val="SansSerif plain 12"/>
+    </comp>
+    <comp lib="0" loc="(110,120)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="a"/>
+      <a name="labelfont" val="SansSerif plain 12"/>
+      <a name="radix" val="10unsigned"/>
+      <a name="width" val="8"/>
+    </comp>
+    <comp lib="0" loc="(110,150)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="b"/>
+      <a name="labelfont" val="SansSerif plain 12"/>
+      <a name="radix" val="10unsigned"/>
+      <a name="width" val="8"/>
+    </comp>
+    <comp lib="0" loc="(190,100)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="s"/>
+      <a name="labelfont" val="SansSerif plain 12"/>
+      <a name="radix" val="10unsigned"/>
+      <a name="type" val="output"/>
+      <a name="width" val="9"/>
+    </comp>
+    <comp lib="0" loc="(190,100)" name="Splitter">
+      <a name="bit1" val="0"/>
+      <a name="bit2" val="0"/>
+      <a name="bit3" val="0"/>
+      <a name="bit4" val="0"/>
+      <a name="bit5" val="0"/>
+      <a name="bit6" val="0"/>
+      <a name="bit7" val="0"/>
+      <a name="bit8" val="1"/>
+      <a name="facing" val="west"/>
+      <a name="incoming" val="9"/>
+      <a name="spacing" val="2"/>
+    </comp>
+    <comp lib="9" loc="(40,40)" name="Text">
+      <a name="font" val="Times New Roman italic 12"/>
+      <a name="halign" val="left"/>
+      <a name="text" val="Representación de leds con 8 bits"/>
+    </comp>
+    <comp loc="(170,110)" name="FA_8bit"/>
+    <wire from="(100,90)" to="(110,90)"/>
+    <wire from="(110,110)" to="(140,110)"/>
+    <wire from="(110,120)" to="(140,120)"/>
+    <wire from="(110,130)" to="(110,150)"/>
+    <wire from="(110,130)" to="(140,130)"/>
+    <wire from="(110,90)" to="(110,110)"/>
+  </circuit>
+  <circuit name="sum_4c1">
+    <a name="appearance" val="logisim_evolution"/>
+    <a name="circuit" val="sum_4c1"/>
+    <a name="circuitnamedboxfixedsize" val="true"/>
+    <a name="simulationFrequency" val="1.0"/>
+    <comp lib="0" loc="(100,90)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="Cin"/>
+      <a name="labelfont" val="SansSerif plain 12"/>
+    </comp>
+    <comp lib="0" loc="(130,170)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="a"/>
+      <a name="labelfont" val="SansSerif plain 12"/>
+      <a name="width" val="4"/>
+    </comp>
+    <comp lib="0" loc="(130,170)" name="Splitter">
+      <a name="fanout" val="4"/>
+      <a name="incoming" val="4"/>
+      <a name="spacing" val="2"/>
+    </comp>
+    <comp lib="0" loc="(130,210)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="b"/>
+      <a name="labelfont" val="SansSerif plain 12"/>
+      <a name="width" val="4"/>
+    </comp>
+    <comp lib="0" loc="(140,210)" name="Splitter">
+      <a name="fanout" val="4"/>
+      <a name="incoming" val="4"/>
+    </comp>
+    <comp lib="0" loc="(370,160)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="Cout"/>
+      <a name="labelfont" val="SansSerif plain 12"/>
+      <a name="type" val="output"/>
+    </comp>
+    <comp lib="0" loc="(370,80)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="s"/>
+      <a name="labelfont" val="SansSerif plain 12"/>
+      <a name="type" val="output"/>
+      <a name="width" val="4"/>
+    </comp>
+    <comp lib="0" loc="(370,80)" name="Splitter">
+      <a name="facing" val="west"/>
+      <a name="fanout" val="4"/>
+      <a name="incoming" val="4"/>
+      <a name="spacing" val="2"/>
+    </comp>
+    <comp lib="9" loc="(40,40)" name="Text">
+      <a name="font" val="Times New Roman italic 12"/>
+      <a name="halign" val="left"/>
+      <a name="text" val="Sumador completo de 4 bits usando sumadores completos de 1 bit"/>
+    </comp>
+    <comp loc="(200,90)" name="FA_1bit">
+      <a name="label" val="FA"/>
+      <a name="labelfont" val="American Typewriter plain 8"/>
+    </comp>
+    <comp loc="(250,110)" name="FA_1bit"/>
+    <comp loc="(300,130)" name="FA_1bit"/>
+    <comp loc="(350,150)" name="FA_1bit"/>
+    <wire from="(100,90)" to="(170,90)"/>
+    <wire from="(130,210)" to="(140,210)"/>
+    <wire from="(150,100)" to="(170,100)"/>
+    <wire from="(150,120)" to="(220,120)"/>
+    <wire from="(150,140)" to="(270,140)"/>
+    <wire from="(150,160)" to="(320,160)"/>
+    <wire from="(160,110)" to="(160,170)"/>
+    <wire from="(160,110)" to="(170,110)"/>
+    <wire from="(160,180)" to="(170,180)"/>
+    <wire from="(160,190)" to="(180,190)"/>
+    <wire from="(160,200)" to="(190,200)"/>
+    <wire from="(170,130)" to="(170,180)"/>
+    <wire from="(170,130)" to="(220,130)"/>
+    <wire from="(180,150)" to="(180,190)"/>
+    <wire from="(180,150)" to="(270,150)"/>
+    <wire from="(190,170)" to="(190,200)"/>
+    <wire from="(190,170)" to="(320,170)"/>
+    <wire from="(200,100)" to="(210,100)"/>
+    <wire from="(200,90)" to="(350,90)"/>
+    <wire from="(210,100)" to="(210,110)"/>
+    <wire from="(210,110)" to="(220,110)"/>
+    <wire from="(250,110)" to="(350,110)"/>
+    <wire from="(250,120)" to="(260,120)"/>
+    <wire from="(260,120)" to="(260,130)"/>
+    <wire from="(260,130)" to="(270,130)"/>
+    <wire from="(300,130)" to="(350,130)"/>
+    <wire from="(300,140)" to="(310,140)"/>
+    <wire from="(310,140)" to="(310,150)"/>
+    <wire from="(310,150)" to="(320,150)"/>
+    <wire from="(350,160)" to="(370,160)"/>
+  </circuit>
+  <circuit name="sum_2">
+    <a name="circuit" val="sum_2"/>
+    <a name="circuitnamedboxfixedsize" val="true"/>
+    <a name="simulationFrequency" val="1.0"/>
+    <comp lib="0" loc="(290,570)" name="Splitter">
+      <a name="facing" val="west"/>
+    </comp>
+    <comp lib="0" loc="(300,570)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="s"/>
+      <a name="labelfont" val="SansSerif plain 12"/>
+      <a name="type" val="output"/>
+      <a name="width" val="2"/>
+    </comp>
+    <comp lib="0" loc="(300,600)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="Cout"/>
+      <a name="labelfont" val="SansSerif plain 12"/>
+      <a name="type" val="output"/>
+    </comp>
+    <comp lib="0" loc="(50,130)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="south"/>
+      <a name="label" val="a"/>
+      <a name="labelfont" val="SansSerif plain 12"/>
+      <a name="width" val="2"/>
+    </comp>
+    <comp lib="0" loc="(50,140)" name="Splitter">
+      <a name="facing" val="south"/>
+      <a name="spacing" val="2"/>
+    </comp>
+    <comp lib="0" loc="(90,130)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="south"/>
+      <a name="label" val="b"/>
+      <a name="labelfont" val="SansSerif plain 12"/>
+      <a name="width" val="2"/>
+    </comp>
+    <comp lib="0" loc="(90,130)" name="Splitter">
+      <a name="facing" val="south"/>
+      <a name="spacing" val="2"/>
+    </comp>
+    <comp lib="1" loc="(170,180)" name="AND Gate">
+      <a name="labelfont" val="SansSerif plain 12"/>
+      <a name="negate0" val="true"/>
+      <a name="size" val="30"/>
+    </comp>
+    <comp lib="1" loc="(170,220)" name="AND Gate">
+      <a name="labelfont" val="SansSerif plain 12"/>
+      <a name="negate1" val="true"/>
+      <a name="size" val="30"/>
+    </comp>
+    <comp lib="1" loc="(170,260)" name="AND Gate">
+      <a name="inputs" val="3"/>
+      <a name="labelfont" val="SansSerif plain 12"/>
+      <a name="negate1" val="true"/>
+      <a name="negate2" val="true"/>
+      <a name="size" val="30"/>
+    </comp>
+    <comp lib="1" loc="(170,300)" name="AND Gate">
+      <a name="inputs" val="3"/>
+      <a name="labelfont" val="SansSerif plain 12"/>
+      <a name="negate0" val="true"/>
+      <a name="negate1" val="true"/>
+      <a name="size" val="30"/>
+    </comp>
+    <comp lib="1" loc="(170,340)" name="AND Gate">
+      <a name="inputs" val="3"/>
+      <a name="labelfont" val="SansSerif plain 12"/>
+      <a name="negate0" val="true"/>
+      <a name="negate2" val="true"/>
+      <a name="size" val="30"/>
+    </comp>
+    <comp lib="1" loc="(170,390)" name="AND Gate">
+      <a name="inputs" val="4"/>
+      <a name="labelfont" val="SansSerif plain 12"/>
+      <a name="size" val="30"/>
+    </comp>
+    <comp lib="1" loc="(170,450)" name="AND Gate">
+      <a name="inputs" val="4"/>
+      <a name="labelfont" val="SansSerif plain 12"/>
+      <a name="negate1" val="true"/>
+      <a name="negate2" val="true"/>
+      <a name="size" val="30"/>
+    </comp>
+    <comp lib="1" loc="(170,510)" name="AND Gate">
+      <a name="inputs" val="4"/>
+      <a name="labelfont" val="SansSerif plain 12"/>
+      <a name="negate1" val="true"/>
+      <a name="negate3" val="true"/>
+      <a name="size" val="30"/>
+    </comp>
+    <comp lib="1" loc="(170,560)" name="AND Gate">
+      <a name="labelfont" val="SansSerif plain 12"/>
+      <a name="size" val="30"/>
+    </comp>
+    <comp lib="1" loc="(170,600)" name="AND Gate">
+      <a name="inputs" val="3"/>
+      <a name="labelfont" val="SansSerif plain 12"/>
+      <a name="size" val="30"/>
+    </comp>
+    <comp lib="1" loc="(170,640)" name="AND Gate">
+      <a name="inputs" val="3"/>
+      <a name="labelfont" val="SansSerif plain 12"/>
+      <a name="size" val="30"/>
+    </comp>
+    <comp lib="1" loc="(210,200)" name="OR Gate">
+      <a name="size" val="30"/>
+    </comp>
+    <comp lib="1" loc="(220,600)" name="OR Gate">
+      <a name="inputs" val="3"/>
+      <a name="size" val="30"/>
+    </comp>
+    <comp lib="1" loc="(260,290)" name="OR Gate">
+      <a name="inputs" val="6"/>
+    </comp>
+    <comp lib="9" loc="(40,40)" name="Text">
+      <a name="font" val="Times New Roman italic 12"/>
+      <a name="halign" val="left"/>
+      <a name="text" val="Sumador de 2 bits con Karnaugh"/>
+    </comp>
+    <wire from="(100,150)" to="(100,250)"/>
+    <wire from="(100,250)" to="(100,300)"/>
+    <wire from="(100,250)" to="(140,250)"/>
+    <wire from="(100,300)" to="(100,340)"/>
+    <wire from="(100,300)" to="(130,300)"/>
+    <wire from="(100,340)" to="(100,380)"/>
+    <wire from="(100,340)" to="(140,340)"/>
+    <wire from="(100,380)" to="(100,440)"/>
+    <wire from="(100,380)" to="(140,380)"/>
+    <wire from="(100,440)" to="(100,500)"/>
+    <wire from="(100,440)" to="(130,440)"/>
+    <wire from="(100,500)" to="(100,550)"/>
+    <wire from="(100,500)" to="(130,500)"/>
+    <wire from="(100,550)" to="(100,600)"/>
+    <wire from="(100,550)" to="(140,550)"/>
+    <wire from="(100,600)" to="(140,600)"/>
+    <wire from="(120,150)" to="(120,170)"/>
+    <wire from="(120,170)" to="(120,210)"/>
+    <wire from="(120,170)" to="(130,170)"/>
+    <wire from="(120,210)" to="(120,290)"/>
+    <wire from="(120,210)" to="(140,210)"/>
+    <wire from="(120,290)" to="(120,330)"/>
+    <wire from="(120,290)" to="(130,290)"/>
+    <wire from="(120,330)" to="(120,370)"/>
+    <wire from="(120,330)" to="(130,330)"/>
+    <wire from="(120,370)" to="(120,430)"/>
+    <wire from="(120,370)" to="(140,370)"/>
+    <wire from="(120,430)" to="(120,490)"/>
+    <wire from="(120,430)" to="(140,430)"/>
+    <wire from="(120,490)" to="(120,590)"/>
+    <wire from="(120,490)" to="(140,490)"/>
+    <wire from="(120,590)" to="(120,630)"/>
+    <wire from="(120,590)" to="(140,590)"/>
+    <wire from="(120,630)" to="(140,630)"/>
+    <wire from="(130,170)" to="(140,170)"/>
+    <wire from="(130,230)" to="(140,230)"/>
+    <wire from="(170,180)" to="(170,190)"/>
+    <wire from="(170,190)" to="(180,190)"/>
+    <wire from="(170,210)" to="(170,220)"/>
+    <wire from="(170,210)" to="(180,210)"/>
+    <wire from="(170,260)" to="(210,260)"/>
+    <wire from="(170,270)" to="(170,300)"/>
+    <wire from="(170,270)" to="(210,270)"/>
+    <wire from="(170,340)" to="(180,340)"/>
+    <wire from="(170,390)" to="(190,390)"/>
+    <wire from="(170,450)" to="(200,450)"/>
+    <wire from="(170,510)" to="(210,510)"/>
+    <wire from="(170,560)" to="(180,560)"/>
+    <wire from="(170,600)" to="(190,600)"/>
+    <wire from="(170,640)" to="(180,640)"/>
+    <wire from="(180,280)" to="(180,340)"/>
+    <wire from="(180,280)" to="(210,280)"/>
+    <wire from="(180,560)" to="(180,590)"/>
+    <wire from="(180,590)" to="(190,590)"/>
+    <wire from="(180,610)" to="(180,640)"/>
+    <wire from="(180,610)" to="(190,610)"/>
+    <wire from="(190,300)" to="(190,390)"/>
+    <wire from="(190,300)" to="(210,300)"/>
+    <wire from="(200,310)" to="(200,450)"/>
+    <wire from="(200,310)" to="(210,310)"/>
+    <wire from="(210,200)" to="(270,200)"/>
+    <wire from="(210,320)" to="(210,510)"/>
+    <wire from="(220,600)" to="(300,600)"/>
+    <wire from="(260,290)" to="(260,590)"/>
+    <wire from="(260,590)" to="(270,590)"/>
+    <wire from="(270,200)" to="(270,580)"/>
+    <wire from="(290,570)" to="(300,570)"/>
+    <wire from="(50,130)" to="(50,140)"/>
+    <wire from="(60,160)" to="(60,270)"/>
+    <wire from="(60,270)" to="(130,270)"/>
+    <wire from="(60,270)" to="(60,310)"/>
+    <wire from="(60,310)" to="(140,310)"/>
+    <wire from="(60,310)" to="(60,350)"/>
+    <wire from="(60,350)" to="(130,350)"/>
+    <wire from="(60,350)" to="(60,410)"/>
+    <wire from="(60,410)" to="(140,410)"/>
+    <wire from="(60,410)" to="(60,470)"/>
+    <wire from="(60,470)" to="(140,470)"/>
+    <wire from="(60,470)" to="(60,530)"/>
+    <wire from="(60,530)" to="(130,530)"/>
+    <wire from="(60,530)" to="(60,570)"/>
+    <wire from="(60,570)" to="(140,570)"/>
+    <wire from="(60,570)" to="(60,650)"/>
+    <wire from="(60,650)" to="(140,650)"/>
+    <wire from="(80,160)" to="(80,190)"/>
+    <wire from="(80,190)" to="(140,190)"/>
+    <wire from="(80,190)" to="(80,230)"/>
+    <wire from="(80,230)" to="(130,230)"/>
+    <wire from="(80,230)" to="(80,260)"/>
+    <wire from="(80,260)" to="(130,260)"/>
+    <wire from="(80,260)" to="(80,400)"/>
+    <wire from="(80,400)" to="(140,400)"/>
+    <wire from="(80,400)" to="(80,460)"/>
+    <wire from="(80,460)" to="(130,460)"/>
+    <wire from="(80,460)" to="(80,520)"/>
+    <wire from="(80,520)" to="(140,520)"/>
+    <wire from="(80,520)" to="(80,610)"/>
+    <wire from="(80,610)" to="(140,610)"/>
+    <wire from="(80,610)" to="(80,640)"/>
+    <wire from="(80,640)" to="(140,640)"/>
+  </circuit>
+  <circuit name="resta">
+    <a name="appearance" val="logisim_evolution"/>
+    <a name="circuit" val="resta"/>
+    <a name="circuitnamedboxfixedsize" val="true"/>
+    <a name="simulationFrequency" val="1.0"/>
+    <comp lib="0" loc="(190,120)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="minuendo"/>
+      <a name="labelfont" val="SansSerif plain 12"/>
+      <a name="width" val="2"/>
+    </comp>
+    <comp lib="0" loc="(190,150)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="sustraendo"/>
+      <a name="labelfont" val="SansSerif plain 12"/>
+      <a name="width" val="2"/>
+    </comp>
+    <comp lib="0" loc="(250,140)" name="Constant"/>
+    <comp lib="0" loc="(250,180)" name="Constant">
+      <a name="facing" val="north"/>
+      <a name="value" val="0x3"/>
+      <a name="width" val="2"/>
+    </comp>
+    <comp lib="0" loc="(340,150)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="type" val="output"/>
+    </comp>
+    <comp loc="(300,140)" name="FA_2bit"/>
+    <wire from="(190,120)" to="(340,120)"/>
+    <wire from="(190,150)" to="(270,150)"/>
+    <wire from="(250,140)" to="(270,140)"/>
+    <wire from="(250,160)" to="(250,180)"/>
+    <wire from="(250,160)" to="(270,160)"/>
+    <wire from="(300,150)" to="(340,150)"/>
+  </circuit>
+  <circuit name="predictor">
+    <a name="appearance" val="logisim_evolution"/>
+    <a name="circuit" val="predictor"/>
+    <a name="circuitnamedboxfixedsize" val="true"/>
+    <a name="simulationFrequency" val="1.0"/>
+    <comp lib="0" loc="(100,90)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="Cin"/>
+      <a name="labelfont" val="SansSerif plain 12"/>
+    </comp>
+    <comp lib="0" loc="(170,120)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="a"/>
+      <a name="labelfont" val="SansSerif plain 12"/>
+      <a name="width" val="8"/>
+    </comp>
+    <comp lib="0" loc="(170,150)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="b"/>
+      <a name="labelfont" val="SansSerif plain 12"/>
+      <a name="width" val="8"/>
+    </comp>
+    <wire from="(100,90)" to="(220,90)"/>
+  </circuit>
+</project>
