@@ -1,4 +1,4 @@
-# Unsigned 4x4 multiplier (all 256 cases)
+# Unsigned 4x4 multiplier
 A[4] B[4] P[8]
 0000 0000 00000000
 0000 0001 00000000
