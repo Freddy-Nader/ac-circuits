@@ -17,6 +17,7 @@ Each folder is one practice with its own README.
 | [`decoder`](decoder) | Decoders with enable, from 1 to 2 up to 4 to 16 lines. |
 | [`seven-segments`](seven-segments) | Base-10 and base-16 decoders for a seven-segment display. |
 | [`mult`](mult) | Unsigned and signed 2×2 multipliers with a mode selector, a signed 3×3 multiplier and a 4×4 array multiplier. |
+| [`alu`](alu) | 8-bit ALU with eight operations, flags Z, N and C, and the six comparisons between A and B. |
 
 ## Getting Started
 Install [Logisim-evolution](https://github.com/logisim-evolution/logisim-evolution/releases) 4.1.0 or later, then
