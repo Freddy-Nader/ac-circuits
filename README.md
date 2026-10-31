@@ -18,6 +18,7 @@ Each folder is one practice with its own README.
 | [`seven-segments`](seven-segments) | Base-10 and base-16 decoders for a seven-segment display. |
 | [`mult`](mult) | Unsigned and signed 2×2 multipliers with a mode selector, a signed 3×3 multiplier and a 4×4 array multiplier. |
 | [`alu`](alu) | 8-bit ALU with eight operations, flags Z, N and C, and the six comparisons between A and B. |
+| [`mem`](mem) | Static RAM of four 8-bit words, built from RS and D triggers, 4- and 8-bit registers, a decoder and a multiplexer. |
 
 ## Getting Started
 Install [Logisim-evolution](https://github.com/logisim-evolution/logisim-evolution/releases) 4.1.0 or later, then
